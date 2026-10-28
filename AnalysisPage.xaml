@@ -1,0 +1,50 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="StylishkidsConfections.AnalysisPage"
+      Title="Analysis Dashboard" d:DesignHeight="469.845" d:DesignWidth="728.587">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#F3F1F7" Margin="0">
+        <StackPanel Margin="10">
+            <TextBlock Text="Store Performance Analysis" FontSize="18" FontWeight="Bold" Foreground="#12050C" Margin="0,0,0,15"/>
+
+            <!-- Top Metric Summary Cards Grid -->
+            <UniformGrid Columns="3" Margin="0,0,0,15">
+                <!-- Card 1 -->
+                <Border Background="White" CornerRadius="12" Padding="15" Margin="0,0,8,0">
+                    <StackPanel>
+                        <TextBlock Text="Total Revenue (This Month)" FontSize="11" Foreground="#7E7888"/>
+                        <TextBlock Text="$12,450.00" FontSize="20" FontWeight="Bold" Foreground="#12050C" Margin="0,5,0,0"/>
+                        <TextBlock Text="↑ 12% vs last month" FontSize="10" Foreground="#2E7D32" FontWeight="SemiBold"/>
+                    </StackPanel>
+                </Border>
+                <!-- Card 2 -->
+                <Border Background="White" CornerRadius="12" Padding="15" Margin="4,0,4,0">
+                    <StackPanel>
+                        <TextBlock Text="Items Sold" FontSize="11" Foreground="#7E7888"/>
+                        <TextBlock Text="642 Units" FontSize="20" FontWeight="Bold" Foreground="#12050C" Margin="0,5,0,0"/>
+                        <TextBlock Text="↑ 8% vs last month" FontSize="10" Foreground="#2E7D32" FontWeight="SemiBold"/>
+                    </StackPanel>
+                </Border>
+                <!-- Card 3 -->
+                <Border Background="White" CornerRadius="12" Padding="15" Margin="8,0,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Average Order Value" FontSize="11" Foreground="#7E7888"/>
+                        <TextBlock Text="$38.40" FontSize="20" FontWeight="Bold" Foreground="#12050C" Margin="0,5,0,0"/>
+                        <TextBlock Text="Stable performance" FontSize="10" Foreground="#7E7888"/>
+                    </StackPanel>
+                </Border>
+            </UniformGrid>
+
+            <!-- Detailed Breakdown Curved Card -->
+            <Border Background="White" CornerRadius="12" Padding="20" Height="299">
+                <StackPanel>
+                    <TextBlock Text="Top Selling Categories" FontWeight="Bold" FontSize="14" Foreground="#12050C" Margin="0,0,0,15"/>
+                    <TextBlock Text="• Toddler Wear — 34% of total sales ($4,233)" Foreground="#58565D" Margin="0,0,0,10"/>
+                    <TextBlock Text="• Party Dresses — 28% of total sales ($3,486)" Foreground="#58565D" Margin="0,0,0,10"/>
+                    <TextBlock Text="• Boys Tees &amp; Jeans — 22% of total sales ($2,739)" Foreground="#58565D" Margin="0,0,0,10"/>
+                    <TextBlock Text="• Footwear — 16% of total sales ($1,992)" Foreground="#58565D"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

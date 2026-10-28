@@ -1,0 +1,29 @@
+﻿<Page x:Class="StylishkidsConfections.CustomersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Customer Management">
+    <Grid Background="#F3F1F7" Margin="20">
+        <StackPanel>
+            <TextBlock Text="Customer Directory" FontSize="18" FontWeight="Bold" Foreground="#12050C" Margin="0,0,0,15"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                <Button Content="+ Register New Customer" Background="#C80208" Foreground="White" Height="38" Width="170" FontWeight="SemiBold" BorderThickness="0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="8"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+
+            <Border Background="White" CornerRadius="12" Padding="15">
+                <StackPanel>
+                    <TextBlock Text="VIP &amp; Regular Members" FontWeight="Bold" FontSize="13" Margin="0,0,0,10"/>
+                    <TextBlock Text="• Sarah Jenkins — sarah.j@gmail.com — VIP Tier (15% Off)" Foreground="#58565D" Margin="0,0,0,8"/>
+                    <TextBlock Text="• Michael Chang — michael.c@outlook.com — Regular Member" Foreground="#58565D" Margin="0,0,0,8"/>
+                    <TextBlock Text="• Amanda Ross — amanda.r@yahoo.com — VIP Tier (15% Off)" Foreground="#58565D"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

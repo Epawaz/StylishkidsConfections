@@ -1,0 +1,41 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="StylishkidsConfections.ReportsPage"
+      Title="Reports" d:DesignHeight="461.51" d:DesignWidth="950.855">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#F3F1F7" Margin="0">
+        <StackPanel Margin="10">
+            <TextBlock Text="Financial &amp; Daily Reports" FontSize="18" FontWeight="Bold" Foreground="#12050C" Margin="0,0,0,15"/>
+
+            <!-- Action Bar -->
+            <Border Background="White" CornerRadius="12" Padding="15" Margin="0,0,0,15">
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="📥 Export Daily PDF" Background="#C80208" Foreground="White" Height="38" Width="145" FontWeight="SemiBold" BorderThickness="0" Margin="0,0,10,0">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Content="📊 Export CSV Summary" Background="#F3F1F7" Foreground="Black" Height="38" Width="160" FontWeight="SemiBold" BorderThickness="1" BorderBrush="#E5E3EB">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Border>
+
+            <!-- Reports List Card -->
+            <Border Background="White" CornerRadius="12" Padding="20" Height="332">
+                <StackPanel>
+                    <TextBlock Text="Recent Generated Reports" FontWeight="Bold" FontSize="14" Foreground="#12050C" Margin="0,0,0,15"/>
+                    <TextBlock Text="• Daily Closing Report — Oct 28, 2026 ($1,420.50 collected)" Foreground="#58565D" Margin="0,0,0,10"/>
+                    <TextBlock Text="• Weekly Tax &amp; Revenue Breakdown — Oct 21 to Oct 27" Foreground="#58565D" Margin="0,0,0,10"/>
+                    <TextBlock Text="• Monthly Inventory Audit — September 2026" Foreground="#58565D"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

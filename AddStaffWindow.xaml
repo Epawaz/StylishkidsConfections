@@ -1,0 +1,146 @@
+﻿<Window x:Class="StylishkidsConfections.AddStaffWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add New Staff Member" Height="620" Width="480"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent">
+
+    <!-- Curved Outer Border Container -->
+    <Border Background="White" CornerRadius="16" Padding="25" BorderBrush="#E5E3EB" BorderThickness="1" Margin="0,0,-11,-87">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+
+                <!-- Header -->
+                <TextBlock Text="👤 Add New User / Staff" FontSize="16" FontWeight="Bold" Foreground="Black" Margin="0,0,0,4"/>
+                <TextBlock Text="Fill in user credentials matching the database schema" FontSize="11" Foreground="#7E7888" Margin="0,0,0,20"/>
+
+                <!-- UserID -->
+                <TextBlock Text="User ID *" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" Margin="0,0,0,12" BorderBrush="#E5E3EB" BorderThickness="1">
+                    <TextBox x:Name="txtUserID" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                </Border>
+
+                <!-- UserName & SurName Grid -->
+                <UniformGrid Columns="2" Margin="0,0,0,12">
+                    <StackPanel Margin="0,0,6,0">
+                        <TextBlock Text="Username *" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                        <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                            <TextBox x:Name="txtUserName" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="6,0,0,0">
+                        <TextBlock Text="Surname" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                        <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                            <TextBox x:Name="txtSurName" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                        </Border>
+                    </StackPanel>
+                </UniformGrid>
+
+                <!-- GivenName & Password Grid -->
+                <UniformGrid Columns="2" Margin="0,0,0,12">
+                    <StackPanel Margin="0,0,6,0">
+                        <TextBlock Text="Given Name" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                        <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                            <TextBox x:Name="txtGivenName" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="6,0,0,0">
+                        <TextBlock Text="Password" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                        <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                            <PasswordBox x:Name="txtPassword" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                        </Border>
+                    </StackPanel>
+                </UniformGrid>
+
+                <!-- DateOfBirth & Gender Grid -->
+                <UniformGrid Columns="2" Margin="0,0,0,12">
+                    <StackPanel Margin="0,0,6,0">
+                        <TextBlock Text="Date Of Birth (YYYY-MM-DD)" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                        <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                            <TextBox x:Name="txtDateOfBirth" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="6,0,0,0">
+                        <TextBlock Text="Gender" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                        <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                            <TextBox x:Name="txtGender" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                        </Border>
+                    </StackPanel>
+                </UniformGrid>
+
+                <!-- UserRole & AccountStatus Grid -->
+                <UniformGrid Columns="2" Margin="0,0,0,12">
+                    <StackPanel Margin="0,0,6,0">
+                        <TextBlock Text="User Role" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                        <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                            <TextBox x:Name="txtUserRole" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black" Text="Cashier"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="6,0,0,0">
+                        <TextBlock Text="Account Status" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                        <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                            <TextBox x:Name="txtAccountStatus" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black" Text="Active"/>
+                        </Border>
+                    </StackPanel>
+                </UniformGrid>
+
+                <!-- PhoneNumber & Email -->
+                <TextBlock Text="Phone Number" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" Margin="0,0,0,12" BorderBrush="#E5E3EB" BorderThickness="1">
+                    <TextBox x:Name="txtPhoneNumber" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                </Border>
+
+                <TextBlock Text="Email Address" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                <Border Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" Margin="0,0,0,20" BorderBrush="#E5E3EB" BorderThickness="1">
+                    <TextBox x:Name="txtEmail" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="Black"/>
+                </Border>
+                <!-- Photo Upload / File Path -->
+                <TextBlock Text="Staff Photo (Binary / Image)" FontSize="11" FontWeight="SemiBold" Foreground="#58565D" Margin="0,0,0,4"/>
+                <Grid Margin="0,0,0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" Background="#F3F1F7" CornerRadius="8" Height="36" Padding="10,0" BorderBrush="#E5E3EB" BorderThickness="1">
+                        <TextBox x:Name="txtPhotoPath" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Center" FontSize="11" Foreground="#7E7888" IsReadOnly="True" Text="No file selected..."/>
+                    </Border>
+
+                    <Button Grid.Column="1" Content="Browse" Background="#12050C" Foreground="White" Height="36" Margin="6,0,0,0" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand" Click="BrowsePhoto_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+                <!-- Action Buttons -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0" Content="Cancel" Background="#F3F1F7" Foreground="Black" Height="38" FontWeight="SemiBold" Margin="0,0,6,0" BorderThickness="1" BorderBrush="#E5E3EB" Cursor="Hand" Click="Cancel_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button Grid.Column="1" Content="Save User" Background="#C80208" Foreground="White" Height="38" FontWeight="SemiBold" Margin="6,0,0,0" BorderThickness="0" Cursor="Hand" Click="SaveUser_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
+</Window>
